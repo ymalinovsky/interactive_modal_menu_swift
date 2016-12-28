@@ -1,26 +1,107 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fvp-gQ-aRp">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="YhT-ne-Qaa">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="fvp-gQ-aRp" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2RD-Hg-TUM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2zg-VR-XGw" kind="relationship" relationship="rootViewController" id="ENE-bT-aPO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jz5-nI-4gE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-105" y="160"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="lsp-Vd-7X8">
+            <objects>
+                <viewController id="2zg-VR-XGw" customClass="MainViewController" customModule="InteractiveModalTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="Cqr-e6-95l"/>
+                        <viewControllerLayoutGuide type="bottom" id="a3U-dM-3kJ"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="P5u-bw-oD6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="t4u-F0-4bC" appends="YES" id="sVD-4z-SuR"/>
+                        </connections>
                     </view>
+                    <navigationItem key="navigationItem" id="Q1h-RR-3LL">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="aKG-Hj-7Y4">
+                            <connections>
+                                <action selector="openMenu:" destination="2zg-VR-XGw" id="X70-Nt-9yN"/>
+                                <segue destination="c5C-kx-RGg" kind="presentation" identifier="openMenu" id="afL-Mh-Iqo"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dRx-l7-9xu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="t4u-F0-4bC">
+                    <rectEdge key="edges" left="YES"/>
+                    <connections>
+                        <action selector="edgePanGestureWithSender:" destination="2zg-VR-XGw" id="qaj-FT-5Ml"/>
+                    </connections>
+                </screenEdgePanGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="649" y="160"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="8DH-ZK-Gop">
+            <objects>
+                <viewController id="c5C-kx-RGg" customClass="MenuViewController" customModule="InteractiveModalTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ot7-j0-yEU"/>
+                        <viewControllerLayoutGuide type="bottom" id="5lS-60-0YU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zbg-NF-TMd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v4n-To-4Z1">
+                                <rect key="frame" x="300" y="20" width="75" height="647"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="SfA-nI-Ngl"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="closeMenu:" destination="c5C-kx-RGg" eventType="touchUpInside" id="1d8-hu-OqN"/>
+                                    <outletCollection property="gestureRecognizers" destination="ab8-Wi-tu3" appends="YES" id="PUE-UM-dvf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="v4n-To-4Z1" secondAttribute="trailing" id="R3F-NS-d0P"/>
+                            <constraint firstItem="v4n-To-4Z1" firstAttribute="top" secondItem="ot7-j0-yEU" secondAttribute="bottom" id="q8m-Kg-oK6"/>
+                            <constraint firstItem="v4n-To-4Z1" firstAttribute="bottom" secondItem="5lS-60-0YU" secondAttribute="top" id="xKh-AM-vyU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="nDD-8d-VxR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wgg-xm-Qdr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="ab8-Wi-tu3">
+                    <connections>
+                        <action selector="handleGestureWithSender:" destination="c5C-kx-RGg" id="S7o-Tm-2H4"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1469.5999999999999" y="159.67016491754123"/>
         </scene>
     </scenes>
 </document>

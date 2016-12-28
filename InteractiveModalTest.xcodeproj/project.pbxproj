@@ -8,22 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		9E37D5671E13C2E500B067EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E37D5661E13C2E500B067EA /* AppDelegate.swift */; };
-		9E37D5691E13C2E500B067EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E37D5681E13C2E500B067EA /* ViewController.swift */; };
 		9E37D56C1E13C2E500B067EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E37D56A1E13C2E500B067EA /* Main.storyboard */; };
 		9E37D56F1E13C2E500B067EA /* InteractiveModalTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9E37D56D1E13C2E500B067EA /* InteractiveModalTest.xcdatamodeld */; };
 		9E37D5711E13C2E500B067EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E37D5701E13C2E500B067EA /* Assets.xcassets */; };
 		9E37D5741E13C2E500B067EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E37D5721E13C2E500B067EA /* LaunchScreen.storyboard */; };
+		9E37D57E1E13C3BC00B067EA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E37D57D1E13C3BC00B067EA /* MainViewController.swift */; };
+		9E37D5801E13C5F400B067EA /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E37D57F1E13C5F400B067EA /* MenuViewController.swift */; };
+		9E37D5821E13D4B500B067EA /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E37D5811E13D4B500B067EA /* Interactor.swift */; };
+		9E37D5841E13DD3800B067EA /* MenuHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E37D5831E13DD3800B067EA /* MenuHelper.swift */; };
+		9E37D5861E13E80800B067EA /* PresentMenuAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E37D5851E13E80800B067EA /* PresentMenuAnimator.swift */; };
+		9E37D5881E1404E400B067EA /* DismissMenuAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E37D5871E1404E400B067EA /* DismissMenuAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9E37D5631E13C2E500B067EA /* InteractiveModalTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InteractiveModalTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E37D5661E13C2E500B067EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9E37D5681E13C2E500B067EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9E37D56B1E13C2E500B067EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9E37D56E1E13C2E500B067EA /* InteractiveModalTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = InteractiveModalTest.xcdatamodel; sourceTree = "<group>"; };
 		9E37D5701E13C2E500B067EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E37D5731E13C2E500B067EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E37D5751E13C2E500B067EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E37D57D1E13C3BC00B067EA /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		9E37D57F1E13C5F400B067EA /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		9E37D5811E13D4B500B067EA /* Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		9E37D5831E13DD3800B067EA /* MenuHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuHelper.swift; sourceTree = "<group>"; };
+		9E37D5851E13E80800B067EA /* PresentMenuAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentMenuAnimator.swift; sourceTree = "<group>"; };
+		9E37D5871E1404E400B067EA /* DismissMenuAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissMenuAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +67,27 @@
 			isa = PBXGroup;
 			children = (
 				9E37D5661E13C2E500B067EA /* AppDelegate.swift */,
-				9E37D5681E13C2E500B067EA /* ViewController.swift */,
 				9E37D56A1E13C2E500B067EA /* Main.storyboard */,
 				9E37D5701E13C2E500B067EA /* Assets.xcassets */,
 				9E37D5721E13C2E500B067EA /* LaunchScreen.storyboard */,
 				9E37D5751E13C2E500B067EA /* Info.plist */,
 				9E37D56D1E13C2E500B067EA /* InteractiveModalTest.xcdatamodeld */,
+				9E37D5891E143F3700B067EA /* Menu */,
 			);
 			path = InteractiveModalTest;
+			sourceTree = "<group>";
+		};
+		9E37D5891E143F3700B067EA /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				9E37D57D1E13C3BC00B067EA /* MainViewController.swift */,
+				9E37D57F1E13C5F400B067EA /* MenuViewController.swift */,
+				9E37D5811E13D4B500B067EA /* Interactor.swift */,
+				9E37D5831E13DD3800B067EA /* MenuHelper.swift */,
+				9E37D5851E13E80800B067EA /* PresentMenuAnimator.swift */,
+				9E37D5871E1404E400B067EA /* DismissMenuAnimator.swift */,
+			);
+			name = Menu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +163,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E37D5881E1404E400B067EA /* DismissMenuAnimator.swift in Sources */,
+				9E37D5841E13DD3800B067EA /* MenuHelper.swift in Sources */,
+				9E37D5861E13E80800B067EA /* PresentMenuAnimator.swift in Sources */,
+				9E37D57E1E13C3BC00B067EA /* MainViewController.swift in Sources */,
 				9E37D56F1E13C2E500B067EA /* InteractiveModalTest.xcdatamodeld in Sources */,
-				9E37D5691E13C2E500B067EA /* ViewController.swift in Sources */,
+				9E37D5821E13D4B500B067EA /* Interactor.swift in Sources */,
 				9E37D5671E13C2E500B067EA /* AppDelegate.swift in Sources */,
+				9E37D5801E13C5F400B067EA /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
